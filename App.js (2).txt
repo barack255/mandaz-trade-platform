@@ -1,0 +1,24 @@
+import React from "react";
+import { View, Text, Button, StyleSheet } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+
+const App = () => {
+  const navigation = useNavigation();
+
+  return (
+    <View style={styles.container}>
+      <Text>Welcome to Mandaz Trade Platform</Text>
+      <Button title="Go to Trade" onPress={() => navigation.navigate("TradeScreen")} />
+    </View>
+  );
+};
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+});
+
+export default App;
