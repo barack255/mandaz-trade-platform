@@ -1,0 +1,19 @@
+const socket = io('http://localhost:3000'); // Connect to the server
+
+// Firebase configuration
+const firebaseConfig = {
+    apiKey: "your-api-key",
+    authDomain: "your-auth-domain",
+    projectId: "your-project-id",
+    storageBucket: "your-storage-bucket",
+    messagingSenderId: "your-messaging-sender-id",
+    appId: "your-app-id"
+};
+firebase.initializeApp(firebaseConfig);
+
+// Update the chart with market data
+const chart = document.getElementById('chart-container'); // Chart logic goes here
+
+socket.on('marketData', function(data) {
+    // Update the chart with data
+});

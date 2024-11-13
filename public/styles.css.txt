@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#chart-container {
+    margin-top: 30px;
+}
+
+button {
+    padding: 10px;
+    margin: 5px;
+}
+
+#trade-info {
+    margin-top: 10px;
+}
+
+#alerts {
+    margin-top: 20px;
+}
+
+#comments-section {
+    margin-top: 20px;
+}
